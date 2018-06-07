@@ -5,3 +5,13 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+#menu-item-31 {
+  display: none;
+}
+
+@media only screen and (min-width: 576px) {
+  #menu-item-31 {
+    display: inline;
+  }
+}

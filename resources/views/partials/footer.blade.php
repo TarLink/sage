@@ -1,5 +1,5 @@
-<footer class="content-info">
-  <div class="container">
-    @php dynamic_sidebar('sidebar-footer') @endphp
-  </div>
+<footer class="footer fixed-bottom mb-1  bg-dark">
+	<div class="container">
+		<span class="text-muted">{!! $copyright !!}</span>
+	</div>
 </footer>

@@ -1,5 +1,11 @@
 // import external dependencies
 import 'jquery';
+import fontawesome from '@fortawesome/fontawesome'
+import faMapMarkerAlt from '@fortawesome/fontawesome-free-solid/faMapMarkerAlt'
+import faPhone from '@fortawesome/fontawesome-free-solid/faPhone'
+import faEnvelope from '@fortawesome/fontawesome-free-solid/faEnvelope'
+
+fontawesome.library.add(faMapMarkerAlt, faPhone, faEnvelope)
 
 // Import everything from autoload
 import "./autoload/**/*"

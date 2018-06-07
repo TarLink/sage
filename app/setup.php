@@ -86,6 +86,11 @@ add_action('widgets_init', function () {
         'name'          => __('Footer', 'sage'),
         'id'            => 'sidebar-footer'
     ] + $config);
+    //mine
+    register_sidebar([
+        'name'          => __('Contact First Page', 'sage'),
+        'id'            => 'sidebar_contact_fp'
+    ] + $config);
 });
 
 /**

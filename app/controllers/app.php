@@ -30,4 +30,8 @@ class App extends Controller
         }
         return get_the_title();
     }
+    //mine
+    public function copyright() {
+      return "&copy; 2018 by Alexandru Bucur";
+    }
 }

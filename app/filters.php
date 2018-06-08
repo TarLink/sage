@@ -68,3 +68,12 @@ add_filter('comments_template', function ($comments_template) {
     );
     return template_path(locate_template(["views/{$comments_template}", $comments_template]) ?: $comments_template);
 }, 100);
+
+//Remove Menus title tooltip
+function my_menu_notitle( $menu ){
+  return $menu = preg_replace('/ title=\"(.*?)\"/', '', $menu );
+}
+
+add_filter( 'wp_nav_menu',  __NAMESPACE__ .  '\\my_menu_notitle' );
+add_filter( 'wp_page_menu',  __NAMESPACE__ . '\\my_menu_notitle' );
+add_filter( 'wp_list_categories',  __NAMESPACE__ .  '\\my_menu_notitle' );

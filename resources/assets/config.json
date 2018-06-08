@@ -9,7 +9,7 @@
     ]
   },
   "publicPath": "/wp_content/themes/hexal",
-  "devUrl": "http://localhost/first",
+  "devUrl": "http://localhost/hexal",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

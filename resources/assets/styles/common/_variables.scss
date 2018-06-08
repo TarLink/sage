@@ -2,5 +2,11 @@
 @import "~bootstrap/scss/functions";
 
 $theme-colors: (
-  primary: #525ddc
+  primary: #525ddc,
+  navbar: #323232,
+  green: #2eb398
 );
+
+$navbar-dark-active-color: map-get($theme-colors, green);
+$navbar-dark-hover-color: map-get($theme-colors, green);
+$dark: map-get($theme-colors, navbar);

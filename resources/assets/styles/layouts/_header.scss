@@ -1,17 +1,50 @@
-.banner .nav li {
-  @extend .nav-item;
-}
+/**
+*.banner .nav li {
+*  @extend .nav-item;
+*}
+*
+*.banner .nav a {
+*  @extend .nav-link;
+*}
+*/
 
-.banner .nav a {
-  @extend .nav-link;
+nav.navbar {
+  min-height: 65px;
+  font-family: 'lato', Arial, sans-serif;
+
+  li {
+    min-width: 130px;
+  }
 }
 
 #menu-item-31 {
   display: none;
+
+  a.nav-link {
+    bottom: -16px;
+  }
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: map-get($grid-breakpoints, md)) {
   #menu-item-31 {
     display: inline;
   }
+
+  nav.navbar {
+    a.nav-link {
+      position: relative;
+      bottom: -27px;
+    }
+  }
+}
+
+/*
+ * nav arrow
+ */
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  border-top: 30px solid map-get($theme-colors, navbar);
 }

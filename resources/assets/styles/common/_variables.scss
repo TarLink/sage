@@ -4,7 +4,8 @@
 $theme-colors: (
   primary: #525ddc,
   navbar: #323232,
-  green: #2eb398
+  green: #2eb398,
+  dark-green: #20816d
 );
 
 $navbar-dark-active-color: map-get($theme-colors, green);

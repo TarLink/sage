@@ -17,3 +17,84 @@
   @extend .btn;
   @extend .btn-secondary;
 }
+
+@mixin form-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  box-sizing: border-box;
+  color: white;
+  background-color: map-get($theme-colors, dark-gray);
+}
+
+@mixin placehoder {
+  color: map-get($theme-colors, gray);
+}
+
+*:focus {
+  outline: none;
+}
+
+form {
+  font-size: 0.75rem;
+
+  input[type="text"] {
+    @include form-input;
+  }
+
+  input[type="email"] {
+    @include form-input;
+  }
+
+  input[type="submit"] {
+    font-family: 'lato bold', Arial, sans-serif;
+    font-size: 12px;
+    color: white;
+    background-color: map-get($theme-colors, green);
+    border: none;
+    padding: 11px 30px;
+    margin-bottom: 5px;
+    float: right;
+  }
+
+  textarea {
+    @include form-input;
+  }
+
+  //placehoder color can not be overriden in sass
+  input::-webkit-input-placeholder {
+    @include placehoder;
+  }
+
+  input::-moz-placeholder {
+    @include placehoder;
+  }
+
+  input:-moz-placeholder { /* Older versions of Firefox */
+    @include placehoder;
+  }
+
+  input:-ms-input-placeholder {
+    @include placehoder;
+  }
+
+  textarea::-webkit-input-placeholder {
+    @include placehoder;
+  }
+
+  textarea::-moz-placeholder {
+    @include placehoder;
+  }
+
+  textarea:-moz-placeholder { /* Older versions of Firefox */
+    @include placehoder;
+  }
+
+  textarea:-ms-input-placeholder {
+    @include placehoder;
+  }
+}
+
+div.wpcf7-response-output {
+  margin-top: 30px;
+}

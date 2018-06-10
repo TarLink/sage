@@ -1,0 +1,21 @@
+$fontstack-prefix: -apple-system, BlinkMacSystemFont;
+$fontstack-sans-serif: 'lato bold', Arial, sans-serif;
+$fontstack-serif: Georgia, serif;
+//$fontstack-monospace: "Iosevka", monospace;
+
+$fontstack-default: $fontstack-prefix, $fontstack-sans-serif;
+$font-size: 1.6vw;
+$font-feature: "case", "ss01", "ss02";
+
+// colors
+$link-color: map-get($theme-colors, green);
+$background-color: #fff;
+$text-color: #2c3e50;
+$code-color: #00cc80;
+
+// breakpoints
+$breakpoint-lg: 1200px;
+$breakpoint-md: 992px;
+$breakpoint-sm: 768px;
+$breakpoint-xs: 576px;
+$breakpoint-default: $breakpoint-md;

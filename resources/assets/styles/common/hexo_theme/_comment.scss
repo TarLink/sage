@@ -1,0 +1,24 @@
+#comment {
+  margin-bottom: 30px;
+}
+
+#submit {
+  margin-bottom: 60px;
+  background-color: map-get($theme-colors, green);
+  border: none;
+}
+
+#commentform {
+  font-family: 'lato regular', Arial, sans-serif;
+
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  textarea {
+    background-color: $gray-200;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

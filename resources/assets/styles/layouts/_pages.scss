@@ -2,6 +2,64 @@
   margin-bottom: 40px;
 }
 
+.wrap-h-line {
+  text-align: center;
+
+  .hor-line {
+    display: inline-block;
+    width: 40%;
+
+    @include media-breakpoint-down(sm) {
+      width: 35%;
+    }
+
+    @include media-breakpoint-down(xs) {
+      display: none;
+    }
+
+    hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid map-get($theme-colors, hr-line);
+      margin: -2.3rem 0 0 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    &.h-left {
+      margin-right: 120px;
+
+      @include media-breakpoint-down(sm) {
+        margin-right: 100px;
+      }
+    }
+
+    &.bottom-portfolio {
+      width: 90%;
+      margin-bottom: -1.9rem;
+    }
+
+    &.bottom-contact {
+      width: 95%;
+      margin-bottom: -1.9rem;
+
+      hr {
+        border-top: 1px solid map-get($theme-colors, hr-line-contact);
+      }
+    }
+
+    &.upper-contact {
+      width: 95%;
+      margin-top: 3rem;
+
+      hr {
+        border-top: 1px solid map-get($theme-colors, hr-line-contact);
+      }
+    }
+  }
+}
+
 .about {
   background-color: map-get($theme-colors, green);
   font-family: 'maven pro regular', Arial, sans-serif;
@@ -64,6 +122,14 @@
         color: map-get($theme-colors, green);
         min-width: 12px;
       }
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .wrap-contact {
+    .contact {
+      margin: -6rem 0 0 0;
     }
   }
 }

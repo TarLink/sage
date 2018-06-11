@@ -1,4 +1,8 @@
 <section class="portfolio">
+  <div class="wrap-h-line">
+    <div class="hor-line h-left"><hr/></div>
+    <div class="hor-line h-right"><hr/></div>
+  </div>
   <div id="grid" class="clear">
     <div class="rw">
       <div class="wrap"><div class="hexagon"></div></div>
@@ -29,16 +33,5 @@
       <div class="wrap hex-lg-dnone" class="wrap"><div class="hexagon"></div></div>
     </div>
   </div>
-<!--  <img src="@asset('images/portfolio/Layer 33.png')" width="180" height="206" alt="">
-  <img src="@asset('images/portfolio/Layer 34.png')" width="180" height="206" alt="">
-  <img src="@asset('images/portfolio/Layer 35.png')" width="180" height="206" alt="">
-  <img src="@asset('images/portfolio/Layer 36.png')" width="180" height="206" alt="">
-  <img src="@asset('images/portfolio/Layer 37.png')" width="180" height="206" alt="">
-  <img src="@asset('images/portfolio/Layer 38.png')" width="180" height="206" alt="">
-  <img src="@asset('images/portfolio/Layer 39.png')" width="180" height="206" alt="">
-  <img src="@asset('images/portfolio/Layer 40.png')" width="180" height="206" alt="">
-  <img src="@asset('images/portfolio/Layer 41.png')" width="180" height="206" alt="">
-  <img src="@asset('images/portfolio/Layer 42.png')" width="180" height="206" alt="">
-  <img src="@asset('images/portfolio/Layer 43.png')" width="180" height="206" alt="">
-  <img src="@asset('images/portfolio/Layer 44.png')" width="180" height="206" alt=""> -->
+  <div class="wrap-h-line"><div class="hor-line bottom-portfolio"><hr/></div></div>
 </section>

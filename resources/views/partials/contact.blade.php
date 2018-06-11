@@ -1,4 +1,5 @@
 <section class="container contact">
+  <div class="wrap-h-line"><div class="hor-line upper-contact"><hr/></div></div>
   <div class="row  pt-5">
     <div class="col-md-1"></div>
     <div class="col-md-7">
@@ -6,7 +7,7 @@
       <h5 class="mt-0">In order to get in touch use the contact form below:</h5>
     </div>
   </div>
-  <div class="row justify-content-md-center pb-5">
+  <div class="row justify-content-md-center pb-3">
     <div class="col-md-7">
       @php dynamic_sidebar('sidebar_contact_fp') @endphp
     </div>
@@ -19,4 +20,5 @@
       </div>
     </div>
   </div>
+  <div class="wrap-h-line"><div class="hor-line bottom-contact"><hr/></div></div>
 </section>

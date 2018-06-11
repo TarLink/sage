@@ -1,4 +1,5 @@
 .footer {
   height: 40px;
   line-height: 40px;
+  background-color: map-get($theme-colors, footer);
 }

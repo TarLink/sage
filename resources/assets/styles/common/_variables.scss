@@ -4,10 +4,14 @@
 $theme-colors: (
   primary: #525ddc,
   navbar: #323232,
+  footer: #222,
   green: #2eb398,
   dark-green: #20816d,
   gray: #bebebe,
-  dark-gray: #454545
+  dark-gray: #454545,
+  hr-line: #e4e9eb,
+  hr-line-contact: #2b2b2b,
+  vertical-line: #219d84
 );
 
 $navbar-dark-active-color: map-get($theme-colors, green);

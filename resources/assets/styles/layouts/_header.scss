@@ -56,3 +56,10 @@ nav.navbar {
   border-right: 45px solid transparent;
   border-top: 30px solid map-get($theme-colors, navbar);
 }
+
+.button:focus,
+.button:active {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none;
+}

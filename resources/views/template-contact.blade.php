@@ -6,5 +6,7 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('partials.contact')
+    <div class="wrap-contact">
+      @include('partials.contact')
+    </div>
 @endsection

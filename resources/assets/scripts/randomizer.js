@@ -1,9 +1,8 @@
 import $ from 'jquery';
 
 $(document).ready(() => {
-	
+
   function display_images(ar_map) {
-    console.log(ar_map);
 	var visible = $('.wrap:visible');
       visible.each( (i, obj) => {
         $(obj).children('.hexagon').css({ "background-image" : "url('./wp-content/themes/hexal/dist/images/portfolio/image_" + ar_map[i-1] + ".png')", "background-repeat" : "no-repeat", "background-size" : "contain"});
@@ -17,21 +16,20 @@ $(document).ready(() => {
     }
 	return ar_map;
   }
-  
+
   function shuffle_images() {
     if (((viewportWidth > 900) && (viewportWidthChanged < 1000)) || ((viewportWidth < 1000) && (viewportWidthChanged > 900))) {
         viewportWidth = viewportWidthChanged;
         ar_map = randomize_images();
         display_images(ar_map);
-    }			  
+    }
   }
-	
+
   var ar_map = randomize_images();
   display_images(ar_map);
   var viewportWidth = $(window).width();
-  console.log(viewportWidth);
-  
-  
+
+
   //listen for the end of a resize
   var rtime;
   var timeout = false;
@@ -52,7 +50,7 @@ $(document).ready(() => {
         timeout = false;
 			viewportWidthChanged = $(window).width();
         shuffle_images();
-    }               
+    }
    }
 
 });

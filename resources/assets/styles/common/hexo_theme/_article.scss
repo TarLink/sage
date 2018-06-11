@@ -1,8 +1,17 @@
 article {
-  font-family: 'lato bold', Arial, sans-serif;
+  font-family: 'lato regular', Arial, sans-serif;
 
-  .entry-title a {
-    color: map-get($theme-colors, dark-gray);
+  .entry-title {
+    font-family: 'lato bold', Arial, sans-serif;
+    margin-top: 25px;
+
+    a {
+      color: map-get($theme-colors, dark-gray);
+    }
+  }
+
+  .entry-summary {
+    padding-bottom: 15px;
   }
 
   .entry-content {

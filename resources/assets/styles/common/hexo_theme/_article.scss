@@ -5,6 +5,10 @@ article {
     color: map-get($theme-colors, dark-gray);
   }
 
+  .entry-content {
+    padding-bottom: 15px;
+  }
+
   p {
     text-indent: 2em;
   }

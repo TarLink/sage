@@ -6,9 +6,12 @@
     ],
     "customizer": [
       "./scripts/customizer.js"
+    ],
+    "randomizer": [
+      "./scripts/randomizer.js"
     ]
   },
-  "publicPath": "/wp_content/themes/hexal",
+  "publicPath": "/hexal/wp-content/themes/hexal",
   "devUrl": "http://localhost/hexal",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",

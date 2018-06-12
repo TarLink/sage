@@ -1,5 +1,5 @@
 <section class="container contact">
-  <div class="wrap-h-line"><div class="hor-line upper-contact"><hr/></div></div>
+  <div class="row wrap-h-line"><div class="hor-line upper-contact"><hr/></div></div>
   <div class="row  pt-5">
     <div class="col-md-1"></div>
     <div class="col-md-7">
@@ -20,5 +20,5 @@
       </div>
     </div>
   </div>
-  <div class="wrap-h-line"><div class="hor-line bottom-contact"><hr/></div></div>
+  <div class="row wrap-h-line"><div class="hor-line bottom-contact"><hr/></div></div>
 </section>

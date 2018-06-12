@@ -50,7 +50,7 @@
         }
       }
 
-      .wrap {
+      .hex-wrap {
         list-style-type: none;
         display: inline-block;
         width: 18%;
@@ -95,6 +95,19 @@
           -ms-transform: skewY(-30deg) rotate(60deg);
           transform: skewY(-30deg) rotate(60deg);
           overflow: hidden;
+
+          @mixin back_img($i) {
+            background-image: url('../images/portfolio/image_' + $i +'.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+          }
+
+          @for $i from 1 through 13 {
+            &.i#{$i} {
+              @include back_img($i);
+            }
+          }
         }
       }
     }

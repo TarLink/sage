@@ -3,10 +3,15 @@ import $ from 'jquery';
 $(document).ready(() => {
 
   function display_images(ar_map) {
-	var visible = $('.wrap:visible');
+      var visible = $('.hex-wrap:visible');
       visible.each( (i, obj) => {
-        $(obj).children('.hexagon').css({ "background-image" : "url('./wp-content/themes/hexal/dist/images/portfolio/image_" + ar_map[i-1] + ".png')", "background-repeat" : "no-repeat", "background-size" : "contain"});
-    });
+        var img_class = 'i' + ar_map[i];
+        $(obj).children('.hexagon')
+            .removeClass( (index, className) => {
+              return (className.match(/\bi[0-9]{1,2}\b/g) || []).join(' ');
+            })
+            .addClass(img_class);
+      });
   }
 
   function randomize_images() {

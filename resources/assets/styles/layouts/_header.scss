@@ -11,6 +11,7 @@
 nav.navbar {
   min-height: 65px;
   font-family: 'lato', Arial, sans-serif;
+  border-color: $dark !important;
 
   li {
     min-width: 114px;
@@ -55,6 +56,7 @@ nav.navbar {
   border-left: 45px solid transparent;
   border-right: 45px solid transparent;
   border-top: 30px solid map-get($theme-colors, navbar);
+  margin-top: -1px;
 }
 
 .button:focus,

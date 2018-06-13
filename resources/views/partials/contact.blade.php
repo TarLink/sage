@@ -20,5 +20,5 @@
       </div>
     </div>
   </div>
-  <div class="row wrap-h-line"><div class="hor-line bottom-contact"><hr/></div></div>
+  <div class="wrap-h-line"><div class="hor-line bottom-contact"><hr/></div></div>
 </section>

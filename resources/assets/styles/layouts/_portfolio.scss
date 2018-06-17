@@ -107,6 +107,11 @@
             &.i#{$i} {
               @include back_img($i);
             }
+
+            //replace possibly offensive images
+            &.i13 {
+              @include back_img(12);
+            }
           }
         }
       }
